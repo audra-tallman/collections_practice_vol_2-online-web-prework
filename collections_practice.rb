@@ -16,3 +16,11 @@ def contain_a(array)
   container
 end
 
+#Method3
+def first_wa(array)
+  container = []
+  array.each do |element|
+    container << element if element[0,1] = "wa"
+  end
+  container
+end
