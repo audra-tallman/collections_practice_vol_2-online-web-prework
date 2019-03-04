@@ -76,3 +76,8 @@ def find_cool(array)
   container
 end
 
+#Method8
+def organize_schools(schools)
+  schools.sort do |a,b|
+    a <=> b
+end
