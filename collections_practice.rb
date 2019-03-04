@@ -1,1 +1,18 @@
-# your code goes here
+#Method1
+def begins_with_r(array)
+  flag = true
+  array.each do |word|
+  flag = false if word[0] != "r"
+  end
+  flag
+end
+
+#Method2
+def contains_a(array)
+  container = []
+  array.each do |element|
+    container << element if element.include? ("a")
+  end
+  container
+end
+
