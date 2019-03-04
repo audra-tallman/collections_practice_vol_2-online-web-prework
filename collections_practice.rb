@@ -8,7 +8,7 @@ def begins_with_r(array)
 end
 
 #Method2
-def contains_a(array)
+def contain_a(array)
   container = []
   array.each do |element|
     container << element if element.include? ("a")
