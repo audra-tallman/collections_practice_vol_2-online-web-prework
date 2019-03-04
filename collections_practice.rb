@@ -66,3 +66,8 @@ def merge_data(keys, data)
   end
   container
 end
+
+#Method7
+def find_cool(array)
+  
+end
