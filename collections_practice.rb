@@ -49,6 +49,7 @@ def count_elements(array)
     end
   end
   .uniq
+end
   
   array.each_with_object(Hash.new(0)) { |array,counts| counts[array] += 1 }
 end
