@@ -52,7 +52,31 @@ def count_elements(array)
 end
 
 #Method6
-def merge_data(keys,data)
-  keys.each do |key|
-    key.merge(data)
+def merge_data(keys, data)
+  container = []
+  keys.each do |person_name|
+    name = person_name[:first_name]
+    values.each do |person_data|
+      if person_data[name]
+        merged_person = person_data[name]
+        merged_person[:first_name] = name
+        container << merged_person
+end
+
+
+
+
+def merge_data(keys, values)
+  container = []
+  keys.each do |person_name|
+    name = person_name[:first_name]
+    values.each do |person_data|
+      if person_data[name]
+        merged_person = person_data[name]
+        merged_person[:first_name] = name
+        container << merged_person
+      end
+    end
+  end
+  container
 end
