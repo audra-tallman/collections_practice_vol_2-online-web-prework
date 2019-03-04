@@ -77,7 +77,16 @@ def find_cool(array)
 end
 
 #Method8
-def organize_schools(array)
-  schools.sort do |a,b|
-    a <=> b
+def organize_schools(schools)
+  organized = {}
+  schools. each do |name, location|
+    location = location[:location]
+    if organized[location]
+        organized[location] << name
+    else
+      organized[location] = []
+      organized[location] << name
+    end
+  end
+  organized
 end
