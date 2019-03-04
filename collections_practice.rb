@@ -70,6 +70,10 @@ end
 #Method7
 def find_cool(array)
   container = []
-  array.each to |element|
-  
+  array.each do |element|
+    container << element if element[:type] == "cool"
+    end
+  end
+  container
 end
+
