@@ -77,7 +77,7 @@ def find_cool(array)
 end
 
 #Method8
-def organize_schools(schools)
+def organize_schools(array)
   schools.sort do |a,b|
     a <=> b
 end
