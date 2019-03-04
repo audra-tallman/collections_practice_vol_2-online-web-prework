@@ -20,7 +20,10 @@ end
 def first_wa(array)
   container = []
   array.each do |element|
-    container << element if element[0,1] = "wa"
+    if element.match(/wa/)
+      first_wa = element
+      break
+    end
   end
-  container
+  first_wa
 end
