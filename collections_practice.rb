@@ -37,3 +37,7 @@ def remove_non_strings(array)
   container
 end
 
+#Method5
+def count_elements(array, count)
+  array.each_with_object(Hash.new(0)) { |array,counts| counts[array] += 1 }
+end
