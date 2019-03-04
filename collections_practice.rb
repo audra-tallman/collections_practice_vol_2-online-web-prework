@@ -27,3 +27,11 @@ def first_wa(array)
   end
   first_wa
 end
+
+#Method4
+def remove_non_strings(array)
+  container = []
+  array.each do |element|
+    container << element if element.to_a? != String
+end
+
