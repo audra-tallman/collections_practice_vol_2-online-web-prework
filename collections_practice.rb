@@ -51,3 +51,8 @@ def count_elements(array)
   .uniq
 end
 
+#Method6
+def merge_data(keys,data)
+  keys.each do |key|
+    key.merge(data)
+end
