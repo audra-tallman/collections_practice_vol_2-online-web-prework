@@ -69,5 +69,7 @@ end
 
 #Method7
 def find_cool(array)
+  container = []
+  array.each to |element|
   
 end
