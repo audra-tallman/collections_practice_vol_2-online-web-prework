@@ -50,3 +50,4 @@ def count_elements(array)
   end
   .uniq
 end
+
