@@ -18,7 +18,7 @@ end
 
 #Method3
 def first_wa(array)
-  container = []
+  first_wa = nil
   array.each do |element|
     if element.match(/wa/)
       first_wa = element
